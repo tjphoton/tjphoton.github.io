@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinjie Qiu - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .projects {
+            display: grid;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #667eea;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #764ba2;
+            border-bottom-color: #764ba2;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Xinjie Qiu</h1>
+            <p class="subtitle">Data Science & Decision Systems</p>
+        </div>
+
+        <div class="projects">
+            <a href="/building-pharma-decision-systems/" class="project-card">
+                <h2>Building Pharmaceutical Decision Systems</h2>
+                <p>A comprehensive guide to pharmaceutical decision science. Learn how to bridge data and action in complex pharmaceutical markets through hands-on examples and practical methods.</p>
+                <span class="project-link">Read the Book →</span>
+            </a>
+
+            <div class="project-card" style="opacity: 0.7; cursor: not-allowed;">
+                <h2>More Projects Coming Soon</h2>
+                <p>Stay tuned for additional projects in data science, decision systems, and analytics.</p>
+                <span class="project-link">Coming Soon</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Xinjie Qiu. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
